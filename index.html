@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="ScratchCard">
+<head>
+    <title>ScratchCard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <base href="/">
+    <!-- build:css /lib.css-->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css /app/main.css-->
+    
+    <!-- inject:css -->   
+    <link rel="stylesheet" href="/development/_public/styles/main.css">   
+    <!-- endinject -->
+
+    <!-- endbuild -->
+
+</head>
+<body dir="ltr">
+
+    <nav>
+        <a href="/">Using PixiJS</a>
+        <a href="/scratch-card-canvas">Using Regular Canvas</a>
+    </nav>
+
+    <!-- Load view -->
+    <div ng-view class="compiled-view"> 
+    </div>
+
+            
+    <!-- build:js /lib.js-->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/pixi.js/bin/pixi.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js /app/build.js-->
+    <!-- inject:js -->
+    <script src="/development/app.module.js"></script>
+    <script src="/development/app.config.js"></script>
+    <script src="/development/app.constants.js"></script>
+    <script src="/development/app.routes.js"></script>
+    <script src="/development/scratch-card-canvas/scratchBoxCanvas.js"></script>
+    <script src="/development/scratch-card-pixi/ScratchBoxPixi.js"></script>
+    <!-- endinject -->
+    <!-- inject:templates:js -->
+    
+    <!-- endinject -->
+    <!-- endbuild -->
+
+</body>
+</html>

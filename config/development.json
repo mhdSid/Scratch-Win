@@ -1,0 +1,15 @@
+{
+  "cdn": {
+    "mainUrl": "development/"
+  },
+  "whiteList":  [ "self",
+                  "http://youtube.com/**",
+                  "http://www.youtube.com/**",
+                  "https://www.youtube.com/**",
+                  "http://s3.amazonaws.com/**",
+                  "https://s3.amazonaws.com/**",
+                  "https://www.facebook.com/**",
+                  "https://twitter.com/**",
+                  "https://instagram.com/**"]
+
+}

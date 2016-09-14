@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	width: 100%;height: 100%;min-width: 100%;min-height: 100%;
+}
+#renderer {
+	//background: url("/development/_public/images/background.jpeg") center center no-repeat;
+	display: inline-block;
+	border-radius: 5px;
+	position: relative;
+}
+nav {
+	z-index: 10;
+	width: 100%; 
+	background: #54442F;
+	height: 40px; 
+	text-align: center; 
+	padding: 11px; 
+	display: flex !important;
+
+	a {
+		text-decoration: none; 
+		color: #8d8275;
+		flex: 1;
+	}
+}
+.compiled-view {
+	background: #413019;width: 100%;height: ~'calc(100% - 40px)';min-width: 100%;
+}
+.pages {
+	width: auto;height: auto; display: inline-block;position: relative;
+}

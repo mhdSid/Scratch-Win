@@ -1,0 +1,23 @@
+{
+    "name": "gulp-project-automation",
+    "preferGlobal": false,
+    "version": "0.0.1",
+    "author": "Mohammad K. Sidani <mohdsidani@gmail.com>",
+    "description": "Automate project tasks using Gulp",
+    "license": "BSD",
+    "homepage": "",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_packages",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "~1.4.6",
+        "angular-route": "~1.4.6",
+        "angular-mocks": "~1.4.6",
+        "pixi.js": "4.0.0"
+    }
+}
