@@ -201,7 +201,7 @@ module ScratchCard {
 					(response)=> { 
 						ctxPicsLoaded(scratchImage, () => {}).then(
 							(response)=> { 
-								getBrushedImageData();
+								//getBrushedImageData();
 								RenderGame();
 								createMatrixDisplayObjects(); 
 							}, 
@@ -240,7 +240,6 @@ module ScratchCard {
 					tempCanvs.height = brushSize;
 
 					/*	* Scratch image data *	*/
-					//tempCtx.globalAlpha = 0;
 					tempCtx.beginPath();
 					tempCtx.drawImage(scratchImage, 0, 0, brushSize, brushSize);
 					tempCtx.fill();
@@ -262,10 +261,10 @@ module ScratchCard {
 					tempCtx.putImageData(brushImageData, 0, 0);
 
 					// Review this to add your own scratch sprite
-						// brushImageData = new ImageData(brushImageData.data, brushSize, brushSize);
-						// scratchImage.src = tempCanvs.toDataURL();
+						//brushImageData = new ImageData(brushImageData.data, brushSize, brushSize);
+
 					//or use the default transparent rectangle
-					brushImageData = new ImageData(brushSize, brushSize);
+					//brushImageData = new ImageData(brushSize, brushSize);
 				}	
 
 
@@ -403,23 +402,12 @@ module ScratchCard {
 					let row: number = event.target.row; 
 					let col: number = event.target.col; 
 
-					brushBoxContext2Ds[row][col].globalAlpha = 0;
 					brushBoxContext2Ds[row][col].beginPath();
 					brushBoxContext2Ds[row][col].translate((brushSize/2), (brushSize/2));
 					brushBoxContext2Ds[row][col].rotate(90 * (Math.PI / 180));
-					brushBoxContext2Ds[row][col].putImageData(brushImageData, x - brushBoxCanvasTexturesView[row][col].x - (brushSize), y - brushBoxCanvasTexturesView[row][col].y - (brushSize));
+					brushBoxContext2Ds[row][col].globalCompositeOperation = 'destination-out';
+     				brushBoxContext2Ds[row][col].drawImage(scratchImage, x - brushBoxCanvasTexturesView[row][col].x - (brushSize), y - brushBoxCanvasTexturesView[row][col].y - (brushSize));
 					brushBoxContext2Ds[row][col].fill();
-
-
-					// brushBoxContext2Ds[row][col].beginPath();
-					// brushBoxContext2Ds[row][col].fillStyle = "#FFFFFF";
-					// brushBoxContext2Ds[row][col].translate((brushSize/2), (brushSize/2));
-					// brushBoxContext2Ds[row][col].rotate(90 * (Math.PI / 180));
-					// brushBoxContext2Ds[row][col].drawImage(scratchImage, x - brushBoxCanvasTexturesView[row][col].x - (brushSize), y - brushBoxCanvasTexturesView[row][col].y - (brushSize));
-					// brushBoxContext2Ds[row][col].arc(x - brushBoxCanvasTexturesView[row][col].x - (brushSize), y - brushBoxCanvasTexturesView[row][col].y - (brushSize), 25, 0, 2 * Math.PI);
-
-					// brushBoxContext2Ds[row][col].fill(); 
-
 				}
 
 			} //end linkFn
