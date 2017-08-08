@@ -1,8 +1,7 @@
 
 # Scratch & Win
 
-![alt text](https://avatars0.githubusercontent.com/u/139426?v=3&s=400 "Logo Title Text 1")![alt text](http://photos3.meetupstatic.com/photos/event/7/9/1/0/600_303990992.jpeg "Logo Title Text 1")      
-![alt text](https://pbs.twimg.com/profile_images/3536632979/66db62603f426a8fc6664081811be6d4.png "Logo Title Text 1")![alt text](https://fknop.gallery.vsassets.io/_apis/public/gallery/publisher/fknop/extension/vscode-npm/3.3.0/assetbyname/Microsoft.VisualStudio.Services.Icons.Default "Logo Title Text 1")      
+![alt text](https://avatars0.githubusercontent.com/u/139426?v=3&s=400 "Logo Title Text 1")![alt text](http://photos3.meetupstatic.com/photos/event/7/9/1/0/600_303990992.jpeg "Logo Title Text 1")           
  
 ## Project Description  
 
